@@ -660,9 +660,9 @@ Return what judgment improved, the weakest assumption, supported claims, unsuppo
 
 ## AI Value Prompts
 
-Use these when an AI session should produce a reusable research asset. See [docs/08-ai-value-playbook.md](08-ai-value-playbook.md) for the full workflow.
+Use this as the quick entry point. See [docs/08-ai-value-playbook.md](08-ai-value-playbook.md) for the full workflow and longer prompts.
 
-### Choose the Highest-Value AI Task
+### Choose the Task and Artifact
 
 ```text
 Given this robotics research situation, choose the highest-value AI task.
@@ -673,19 +673,10 @@ Situation:
 Constraints:
 [robot or simulator, data, time, compute, safety, evaluation]
 
-Return the task to ask, the input to provide, the artifact to save, and the decision this should support.
-```
-
-### Extract a Reusable Artifact
-
-```text
-Convert this sanitized research discussion summary into a reusable artifact.
-
-Summary:
-[sanitized summary, not raw chat]
-
-Artifact type:
-[paper card / gap table / experiment plan / fault tree / claim-evidence table]
-
-Return concise Markdown and remove prompt chatter, unsupported claims, private details, and verification-sensitive statements.
+Return:
+- task to ask AI to do
+- input I should provide
+- artifact to save: paper card, gap table, experiment plan, fault tree, or claim-evidence table
+- decision the artifact should support
+- private details to keep out
 ```

@@ -249,5 +249,5 @@ Fault tree:
 Run perception replay and reset-distribution checks before retraining the policy.
 
 ## Artifact to Save
-Experiment Debug Log entry plus one claim-evidence note: current evidence supports a sim-to-real mismatch, not a policy improvement claim.
+Experiment Debug Log entry plus one claim-evidence note: current evidence supports a sim-to-real mismatch. A policy improvement claim would need additional comparison runs.
 ```

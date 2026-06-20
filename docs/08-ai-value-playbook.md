@@ -1,12 +1,12 @@
 # AI Value Playbook
 
-Advanced AI tools are most useful in robotics research when they improve decisions, reduce avoidable confusion, or turn messy work into reusable research assets. The value comes from sharper hypotheses, cleaner experiments, better debugging, and clearer evidence boundaries.
+Advanced AI tools earn their cost when they change a research decision or produce an artifact you can reuse. In robotics, that usually means a sharper hypothesis, a smaller experiment, a better failure diagnosis, or a claim-evidence table that prevents overclaiming.
 
 Keep private research details outside public prompts and outside this repository. Use sanitized summaries, synthetic examples, and public-safe artifacts.
 
 ## What Counts as High-Value AI Use
 
-High-value AI use leaves behind something you can reuse:
+High-value AI use leaves behind a research asset:
 
 - a paper card with assumptions and verification questions;
 - a research gap table with reasons to reject weak gaps;
@@ -15,7 +15,7 @@ High-value AI use leaves behind something you can reuse:
 - a claim-evidence table with safer wording;
 - a weekly decision log that explains what changed and why.
 
-A good AI session should make the next research action more concrete. Examples:
+The next action should be specific enough to run, reject, or log:
 
 - "Run the scripted controller before retraining the policy."
 - "Revise the claim to simulated held-out objects."
@@ -25,8 +25,8 @@ A good AI session should make the next research action more concrete. Examples:
 
 | Low-value task | Higher-value replacement |
 |---|---|
-| Ask for a broad research idea. | Ask for three hypotheses from one paper card and one robot constraint. |
-| Ask for a field summary. | Ask for assumptions, baselines, and evaluation patterns from papers you already selected. |
+| Ask for a broad research idea. | Ask for hypotheses from one paper card and one robot constraint. |
+| Ask for a field summary. | Ask for assumptions, baselines, and evaluation patterns from selected papers. |
 | Ask AI to make a claim sound stronger. | Ask which parts of the claim are unsupported by current evidence. |
 | Paste raw logs. | Provide a sanitized failure summary, expected behavior, observed behavior, and recent changes. |
 | Generate many experiments. | Ask for the smallest experiment that can reject or revise one idea. |
@@ -34,7 +34,7 @@ A good AI session should make the next research action more concrete. Examples:
 
 ## When to Use Advanced Reasoning
 
-Use advanced reasoning when the task needs multi-step judgment:
+Use advanced reasoning when the task needs multi-step judgment across evidence, constraints, and failure modes:
 
 - comparing several explanations for a failed robot behavior;
 - deciding whether a gap is real or only a missing feature;
@@ -43,7 +43,7 @@ Use advanced reasoning when the task needs multi-step judgment:
 - planning a week of research under time, robot, data, and compute constraints;
 - preparing a rebuttal where the response must match reviewer concerns and available evidence.
 
-Use a lighter tool or a simple checklist for routine formatting, spelling, table cleanup, or converting notes into Markdown.
+Use a lighter tool or checklist for formatting, spelling, table cleanup, and routine Markdown conversion.
 
 ## Turning AI Conversations Into Reusable Research Assets
 
@@ -54,16 +54,6 @@ Treat an AI conversation as temporary workspace. The saved artifact should be sh
 3. Extract the durable artifact: table, checklist, experiment plan, fault tree, or claim-evidence review.
 4. Remove prompt chatter, private context, local paths, raw logs, and speculative claims.
 5. Save the artifact in your private research notebook. Add only synthetic or public-safe examples to this repository.
-
-Useful asset formats:
-
-- Paper card
-- Assumption list
-- Research gap table
-- Experiment ledger entry
-- Debug fault tree
-- Claim-evidence table
-- Weekly AI value review
 
 ## Weekly AI Value Review
 
@@ -122,25 +112,6 @@ Target artifact:
 [paper card / gap table / experiment plan / fault tree / claim-evidence table]
 
 Return a concise Markdown artifact. Remove prompt chatter, unsupported claims, private details, and anything that should be verified in the original source.
-```
-
-### Advanced Reasoning Gate
-
-```text
-Check whether this task needs advanced reasoning.
-
-Task:
-[task]
-
-Context:
-[sanitized context]
-
-Return:
-- whether advanced reasoning is useful
-- why
-- the smallest useful prompt
-- a cheaper checklist-style alternative
-- the artifact I should save afterward
 ```
 
 ### Experiment Critique for Value

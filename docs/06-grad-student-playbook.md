@@ -18,7 +18,7 @@ The useful output is a clearer decision about what to read, test, reject, or exp
 
 Start with the First Pass Research Worksheet in [docs/04-templates.md](04-templates.md) and one synthetic worked example in [examples/sanitized-examples.md](../examples/sanitized-examples.md). Fill the worksheet for one paper before building a larger research plan. This keeps the first loop small enough to inspect: one observation, one possible gap, one idea, one minimal experiment, and one evidence check.
 
-Use [docs/08-ai-value-playbook.md](08-ai-value-playbook.md) when you start spending longer sessions with advanced AI tools. The goal is to leave each serious session with an artifact you can reuse: a gap table, experiment critique, fault tree, or claim-evidence check.
+Use [docs/08-ai-value-playbook.md](08-ai-value-playbook.md) for longer advanced-AI sessions. Save the result as a gap table, experiment critique, fault tree, or claim-evidence check.
 
 ## What AI Tools Are Useful For
 

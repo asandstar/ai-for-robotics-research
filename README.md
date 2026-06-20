@@ -6,9 +6,9 @@ Languages: English | [简体中文](README.zh-CN.md)
 
 ## What This Repo Is
 
-This repository is a sanitized, documentation-first playbook for using AI tools to support robotics research. It collects compact workflows, prompt templates, reusable Markdown structures, and release-safety checklists for researchers who want AI assistance without exposing private work.
+This repository is a sanitized, documentation-first playbook for using advanced AI tools on high-value robotics research tasks: judging problems, designing experiments, analyzing failures, checking evidence, and turning messy work into reusable assets.
 
-The focus is on research operations: reading papers, mapping literature, forming hypotheses, designing experiments, debugging robotics systems, analyzing evidence, writing papers, and preparing rebuttals.
+It collects compact workflows, prompt templates, Markdown structures, synthetic examples, and release-safety checklists for researchers who want AI assistance without exposing private work.
 
 ## What This Repo Is Not
 
