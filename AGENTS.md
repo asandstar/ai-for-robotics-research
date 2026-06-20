@@ -34,6 +34,13 @@ This is a documentation-first repository for AI-assisted robotics research. Keep
 - Keep translations natural, not mechanical.
 - Preserve the sanitization policy in both languages.
 
+## Wiki Policy
+
+- Treat repository Markdown files as the source of truth.
+- Use GitHub Wiki, if enabled, as a lightweight navigation layer.
+- Link Wiki pages to maintained docs instead of duplicating full documents.
+- Keep Wiki editing restricted to collaborators.
+
 ## Citation Policy
 
 - Do not invent citations, papers, authors, venues, DOIs, or URLs.

@@ -90,6 +90,12 @@ Use one paper and one small worksheet. Keep any real notes, paths, results, and 
     `-- sanitized-examples.md
 ```
 
+## Wiki
+
+This repository may use GitHub Wiki as a lightweight navigation layer.
+
+The Markdown files in this repository remain the source of truth. Wiki pages should link to maintained documents under `docs/` instead of duplicating full content. Wiki editing should remain restricted to collaborators to preserve sanitization, citation quality, and writing consistency.
+
 ## Sanitization and Contribution Policy
 
 Anyone adding, editing, or submitting content should keep this repository public-safe, reusable, and sanitized. Use synthetic or anonymized material unless the source is already public and appropriate to cite.

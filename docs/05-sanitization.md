@@ -1,6 +1,6 @@
 # Sanitization Guide
 
-Use this guide before making repository content public. The goal is to preserve reusable research workflow knowledge while removing private, identifying, confidential, or unpublished material.
+Use this guide when adding, editing, submitting, or preparing repository content for public release. The goal is to preserve reusable research workflow knowledge while removing private, identifying, confidential, or unpublished material.
 
 ## What Not to Publish
 
