@@ -2,6 +2,101 @@
 
 Use these prompts as templates. Replace bracketed fields with sanitized context. Do not paste private notes, raw logs, credentials, unpublished results, or confidential lab details.
 
+## First-Use Prompt Set
+
+Use these with one paper and the First Pass Research Worksheet from [docs/04-templates.md](04-templates.md). Keep private details out of the prompt.
+
+### Paper Assumption Extraction
+
+```text
+From this sanitized paper card, extract the assumptions that matter for robotics experiments.
+
+Paper card:
+[paste sanitized paper card]
+
+Return:
+- task assumptions
+- sensing assumptions
+- data assumptions
+- robot or simulator assumptions
+- evaluation assumptions
+- questions I should verify in the paper
+```
+
+### Possible Gap Extraction
+
+```text
+Use this paper observation to identify possible research gaps.
+
+Observation:
+[paper observation]
+
+Assumptions:
+[assumption bullets]
+
+Return 3 possible gaps. For each, explain what evidence would show that the gap is real and why it may be a weak gap.
+```
+
+### Idea Evaluation
+
+```text
+Evaluate this robotics research idea.
+
+Idea:
+[idea]
+
+Paper observation:
+[observation]
+
+Available setup:
+[robot or simulator, data, time, compute]
+
+Score importance, clarity, testability, feasibility, baseline clarity, evidence quality, and risk from 1 to 5. Then recommend proceed, revise, or drop.
+```
+
+### Idea-to-Minimal-Experiment Conversion
+
+```text
+Convert this idea into a 4-week minimal robotics experiment.
+
+Idea:
+[idea]
+
+Available setup:
+[setup]
+
+Return:
+- hypothesis
+- minimal task
+- baseline
+- primary metric
+- diagnostic metric
+- ablation or control
+- likely failure modes
+- result that would make me revise or drop the idea
+```
+
+### Claim-Evidence Checking
+
+```text
+Check whether this claim matches the evidence.
+
+Claim:
+[claim]
+
+Current evidence:
+[evidence]
+
+Known failures or caveats:
+[failures or caveats]
+
+Return:
+- supported part of the claim
+- unsupported part of the claim
+- safer wording
+- missing experiment or analysis
+```
+
 ## Research Direction Selection
 
 **Use case:** Narrow broad interests into feasible research directions.
@@ -561,4 +656,36 @@ Failures: [failure notes]
 Decisions made: [decisions]
 
 Return what judgment improved, the weakest assumption, supported claims, unsupported claims, one idea to drop or revise, and next week's evidence target.
+```
+
+## AI Value Prompts
+
+Use these when an AI session should produce a reusable research asset. See [docs/08-ai-value-playbook.md](08-ai-value-playbook.md) for the full workflow.
+
+### Choose the Highest-Value AI Task
+
+```text
+Given this robotics research situation, choose the highest-value AI task.
+
+Situation:
+[paper, idea, failure, result, or writing problem]
+
+Constraints:
+[robot or simulator, data, time, compute, safety, evaluation]
+
+Return the task to ask, the input to provide, the artifact to save, and the decision this should support.
+```
+
+### Extract a Reusable Artifact
+
+```text
+Convert this sanitized research discussion summary into a reusable artifact.
+
+Summary:
+[sanitized summary, not raw chat]
+
+Artifact type:
+[paper card / gap table / experiment plan / fault tree / claim-evidence table]
+
+Return concise Markdown and remove prompt chatter, unsupported claims, private details, and verification-sensitive statements.
 ```

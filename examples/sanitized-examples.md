@@ -143,3 +143,111 @@ Evaluate whether perturbation-based diagnostics reveal brittle behavior that tas
 ## Possible Reason to Drop or Revise
 If failures are random, metrics are unstable, or the diagnostic does not reveal information beyond task success, revise the idea or drop it.
 ```
+
+## Worked Example 1: Paper to Minimal Experiment
+
+Synthetic and public-safe. No real unpublished result is implied.
+
+```markdown
+## Paper Observation
+A vision-only manipulation policy succeeds in a synthetic pick-and-place task when objects are rigid and contact is brief.
+
+## Possible Gap
+The evaluation may miss contact-rich failures where the gripper must slide, press, or maintain force while moving the object.
+
+## Research Idea
+Test whether adding contact-state diagnostics reveals failures hidden by task success in vision-only manipulation policies.
+
+## Minimal Experiment
+- Task: Generic simulated insertion or pushing task with controlled contact.
+- Baseline: Vision-only imitation policy.
+- Metric: Task success.
+- Diagnostic: Contact stability, slip events, and recovery time.
+- Scope: Compare baseline behavior across low-contact and contact-rich variants.
+
+## Evidence Needed
+- Task success and diagnostic metrics for both task variants.
+- Failure categories showing whether contact-rich trials fail differently.
+
+## Reason to Revise or Drop
+If contact diagnostics add no information beyond task success, revise the metric or drop the idea.
+```
+
+## Worked Example 2: Failed Experiment Diagnosis
+
+Synthetic and public-safe. It uses a generic sim-to-real pattern.
+
+```markdown
+## Failed Experiment
+A policy reaches high success in simulation on a tabletop relocation task. Real-robot trials show much lower success.
+
+## Possible Causes
+- Perception: real camera lighting shifts object appearance.
+- Control: real gripper latency changes contact timing.
+- Dynamics: simulated friction is too simple.
+- Evaluation: real-world reset positions differ from simulation.
+
+## Diagnostic Tests
+- Replay real camera frames through the perception stack.
+- Run a scripted controller on the real robot to separate policy failure from hardware or task setup.
+- Sweep friction and latency in simulation.
+- Log initial object pose distribution for real trials and simulated trials.
+
+## Next Action
+Run the scripted-controller sanity check and compare real versus simulated initial-state distributions before retraining the policy.
+```
+
+## Worked Example 3: Claim-Evidence Alignment
+
+Synthetic and public-safe. It does not report real results.
+
+```markdown
+## Paper Draft Claim
+The method generalizes to unseen objects in tabletop manipulation.
+
+## Current Evidence
+- Tested on three synthetic object shapes.
+- Compared against one vision-only baseline.
+- No real-robot trials yet.
+- Failure cases show unstable grasps for thin objects.
+
+## Evidence Gap
+The claim is broader than the evaluation. The evidence supports limited simulated variation across three held-out object shapes.
+
+## Safer Wording
+In the tested simulator setting, the method improves performance on three held-out synthetic object shapes compared with the vision-only baseline.
+
+## Additional Experiment
+Add a larger held-out object set, report failures by object geometry, and run a small real-robot sanity check before making a real-world generalization claim.
+```
+
+## Worked Example 4: AI Session to Research Asset
+
+Synthetic and public-safe. This summarizes an AI-assisted workflow without preserving a raw chat transcript.
+
+```markdown
+## Starting Point
+A student has a paper card for a simulated pushing policy and a failed real-robot trial summary.
+
+## High-Value AI Task
+Ask an advanced reasoning model to compare possible failure causes across perception, dynamics, control latency, and evaluation mismatch.
+
+## Sanitized Input
+- Simulation success is high on a generic pushing task.
+- Real-robot success is lower under varied lighting and object poses.
+- Recent changes: camera calibration update and new object reset procedure.
+- No raw logs, local paths, private dataset names, or lab identifiers included.
+
+## Reusable Artifact
+Fault tree:
+- Perception: compare real camera frames with simulated observations.
+- Dynamics: sweep friction and object mass in simulation.
+- Control: measure command latency during contact.
+- Evaluation: compare reset pose distributions.
+
+## Decision Supported
+Run perception replay and reset-distribution checks before retraining the policy.
+
+## Artifact to Save
+Experiment Debug Log entry plus one claim-evidence note: current evidence supports a sim-to-real mismatch, not a policy improvement claim.
+```

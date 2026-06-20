@@ -51,6 +51,18 @@ This repository is a working playbook. Use it to structure private research work
 3. Use [docs/03-prompt-library.md](docs/03-prompt-library.md) for critique, idea evaluation, experiment design, debugging, result analysis, and writing.
 4. Use [docs/06-grad-student-playbook.md](docs/06-grad-student-playbook.md) as an early-stage researcher training path.
 5. Use [docs/07-research-taste.md](docs/07-research-taste.md) to train research judgment: problem choice, gap quality, testability, and evidence discipline.
+6. Use [docs/08-ai-value-playbook.md](docs/08-ai-value-playbook.md) to turn advanced AI sessions into reusable research assets.
+
+## First 60 Minutes
+
+Use one paper and one small worksheet. Keep any real notes, paths, results, and lab details in your private workspace.
+
+1. Choose one robotics paper related to a task you can understand.
+2. Fill a paper card or the First Pass Research Worksheet in [docs/04-templates.md](docs/04-templates.md).
+3. Extract assumptions and one possible gap with [docs/03-prompt-library.md](docs/03-prompt-library.md).
+4. Evaluate one idea for importance, testability, feasibility, and evidence.
+5. Sketch a 4-week minimal experiment with one baseline, one primary metric, and one diagnostic metric.
+6. Check claim-evidence alignment before writing a strong claim.
 
 ## Repository Structure
 
@@ -68,14 +80,15 @@ This repository is a working playbook. Use it to structure private research work
 |   |-- 04-templates.md
 |   |-- 05-sanitization.md
 |   |-- 06-grad-student-playbook.md
-|   `-- 07-research-taste.md
+|   |-- 07-research-taste.md
+|   `-- 08-ai-value-playbook.md
 `-- examples/
     `-- sanitized-examples.md
 ```
 
-## Sanitization Policy
+## Sanitization and Contribution Policy
 
-Before adding material, remove or generalize:
+Anyone adding, editing, or submitting content should keep this repository public-safe, reusable, and sanitized. Use synthetic or anonymized material unless the source is already public and appropriate to cite.
 
 - Names, emails, institutions, lab identifiers, meeting details, and personal comments.
 - Raw prompts or chats that reveal private context.
@@ -83,7 +96,7 @@ Before adding material, remove or generalize:
 - Dataset paths, robot IDs, internal system names, API keys, credentials, and access tokens.
 - Screenshots that expose people, locations, browser tabs, terminals, filenames, or private dashboards.
 
-When in doubt, rewrite the example as synthetic material that preserves the learning pattern but not the private facts.
+When in doubt, rewrite the contribution as a synthetic example that preserves the reusable workflow without exposing private facts.
 
 See [docs/05-sanitization.md](docs/05-sanitization.md) for the public-release checklist.
 

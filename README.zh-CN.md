@@ -34,6 +34,18 @@ Languages: [English](README.md) | 简体中文
 3. 用 [docs/03-prompt-library.md](docs/03-prompt-library.md) 让 AI 帮你批判想法、拆实验、分析失败，并压缩不成熟的点子。
 4. 按 [docs/06-grad-student-playbook.md](docs/06-grad-student-playbook.md) 训练早期研究生需要的基本科研能力。
 5. 读 [docs/07-research-taste.md](docs/07-research-taste.md)，把科研品味当作可以训练的判断力。
+6. 用 [docs/08-ai-value-playbook.md](docs/08-ai-value-playbook.md) 把高级 AI 会话整理成可复用的科研资产。
+
+## 第一次使用：60 分钟小循环
+
+先选一篇机器人论文，用一个小表格跑完整个流程。真实笔记、路径、实验结果和实验室细节都留在你的私人工作区。
+
+1. 选一篇和具体任务相关、自己能读懂的机器人论文。
+2. 用 [docs/04-templates.md](docs/04-templates.md) 里的 paper card 或 First Pass Research Worksheet 做第一版记录。
+3. 用 [docs/03-prompt-library.md](docs/03-prompt-library.md) 提取论文假设和一个可能 gap。
+4. 评价一个想法：它是否重要、能否测试、资源是否够、需要什么证据。
+5. 草拟一个 4 周最小实验：一个 baseline、一个主指标、一个诊断指标。
+6. 写强 claim 之前，先检查 claim 和证据是否对得上。
 
 ## 核心科研流程
 
@@ -65,14 +77,15 @@ Languages: [English](README.md) | 简体中文
 |   |-- 04-templates.md
 |   |-- 05-sanitization.md
 |   |-- 06-grad-student-playbook.md
-|   `-- 07-research-taste.md
+|   |-- 07-research-taste.md
+|   `-- 08-ai-value-playbook.md
 `-- examples/
     `-- sanitized-examples.md
 ```
 
-## 脱敏原则
+## 脱敏与贡献原则
 
-公开内容前，请删除或泛化：
+任何添加、修改或提交到本仓库的内容，都应保持公开安全、可复用、已脱敏。除非来源本身已经公开且适合引用，否则请使用合成或匿名化材料。
 
 - 姓名、邮箱、机构、实验室标识、会议细节和个人评论。
 - 会暴露私有上下文的原始 prompt 或聊天记录。
@@ -80,7 +93,7 @@ Languages: [English](README.md) | 简体中文
 - 数据路径、机器人编号、内部系统名、API key、凭据和访问 token。
 - 暴露人员、地点、浏览器标签、终端、文件名或私有 dashboard 的截图。
 
-不确定时，把例子改写成合成示例，只保留可复用的科研流程。
+不确定时，把贡献内容改写成合成示例，只保留可复用的科研流程，不保留私人事实。
 
 ## License 说明
 

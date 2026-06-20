@@ -112,6 +112,7 @@ Do not rush Level 5. Many weak projects come from skipping Levels 1 to 3.
 
 ## 7. Training Drills / 训练方法
 
+- First pass worksheet: fill the First Pass Research Worksheet in [docs/04-templates.md](04-templates.md) for one paper before ranking larger project ideas.
 - Paper assumption drill: after reading a paper, list what must be true for the method to work.
 - Claim-evidence drill: write each claim beside the evidence that supports it.
 - Idea ranking drill: score five ideas with the rubric, then reject at least two.

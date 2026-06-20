@@ -2,6 +2,41 @@
 
 Copy these Markdown templates into your private notes or sanitized public documents as needed.
 
+## First Pass Research Worksheet
+
+```markdown
+# First Pass Research Worksheet
+
+## Paper Information
+- Title:
+- Link or citation:
+- Task or robot setting:
+
+## Observation
+- What did the paper show?
+- What assumption does it rely on?
+
+## Possible Gap
+- What may be missing, weakly tested, or unclear?
+
+## Idea
+- One testable idea:
+- Baseline:
+
+## Minimal Experiment
+- Task:
+- Primary metric:
+- Diagnostic metric:
+- 4-week scope:
+
+## Evidence Needed
+- What would support the idea?
+- What would make me revise or drop it?
+
+## Next Action
+- 
+```
+
 ## Personal Research Profile
 
 ```markdown
@@ -252,6 +287,33 @@ Copy these Markdown templates into your private notes or sanitized public docume
 - Scope too large:
 - Failure mode I should not ignore:
 - Next evidence target:
+```
+
+## Weekly AI Value Review
+
+```markdown
+# Weekly AI Value Review
+
+## Week
+
+## AI-Assisted Tasks
+| Task | Input Used | Artifact Produced | Decision Supported |
+|---|---|---|---|
+|  |  |  |  |
+
+## Highest-Value Use
+- Session:
+- Why it helped:
+- Artifact saved:
+
+## Low-Value Use to Change
+- Session:
+- Issue:
+- Better prompt next time:
+
+## Privacy Check
+- Private details kept out:
+- Items to sanitize before sharing:
 ```
 
 ## Weekly Research Review
