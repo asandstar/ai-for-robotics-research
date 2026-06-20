@@ -316,6 +316,32 @@ Copy these Markdown templates into your private notes or sanitized public docume
 - Items to sanitize before sharing:
 ```
 
+## Active Workflow Reminder
+
+```markdown
+# Active Workflow Reminder
+
+## Loop
+- Monday planning / Friday review / paper reading / experiment failure / AI value review:
+
+## Trigger
+- Date or event:
+
+## Input Needed
+- 
+
+## Artifact to Update
+- 
+
+## Human Decision Required
+- 
+
+## Safety Check
+- Private details:
+- Unsupported claims:
+- Public repo risk:
+```
+
 ## Weekly Research Review
 
 ```markdown

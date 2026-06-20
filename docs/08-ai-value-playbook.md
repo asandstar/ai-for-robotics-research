@@ -68,6 +68,8 @@ At the end of each week, review whether AI use improved the research process.
 | Which private details were kept out? | Sanitized inputs and no raw logs or private paths. |
 | What should be asked differently next week? | A more specific prompt, better constraints, or a smaller question. |
 
+For reminders and recurring review loops, see [docs/09-active-workflows.md](09-active-workflows.md).
+
 ## Common Ways to Waste Advanced AI Tools
 
 - Asking for novelty before reading enough papers to judge a gap.
@@ -87,10 +89,14 @@ At the end of each week, review whether AI use improved the research process.
 I want to use an advanced reasoning model for robotics research.
 
 Current situation:
-[paper, idea, failure, result, or writing problem]
+I read a paper where a vision-only manipulation policy succeeds on a simulated pick-and-place task. The paper card suggests that contact-rich cases are weakly analyzed. I have access to a generic tabletop simulator and can run small pushing or insertion tasks. Real-robot access is unavailable this month.
 
 Constraints:
-[robot or simulator, data, time, compute, safety, evaluation]
+- Platform: generic tabletop simulator
+- Time: 4 weeks
+- Data: small synthetic demonstration set
+- Evaluation: task success, contact stability, recovery time
+- Safety/privacy: no private dataset names, no raw logs, no lab identifiers
 
 Recommend the highest-value AI task for this situation. Return:
 - the task to ask AI to do
@@ -106,10 +112,10 @@ Recommend the highest-value AI task for this situation. Return:
 Convert this sanitized AI-assisted research discussion into a reusable artifact.
 
 Discussion summary:
-[sanitized summary, not raw chat]
+We discussed a simulated pushing policy with high simulation success and low success in a small real-robot sanity check. Possible causes included camera lighting shift, friction mismatch, gripper latency, and different object reset distributions. The strongest next action was to compare real and simulated initial-state distributions before retraining.
 
 Target artifact:
-[paper card / gap table / experiment plan / fault tree / claim-evidence table]
+Experiment Debug Log fault tree
 
 Return a concise Markdown artifact. Remove prompt chatter, unsupported claims, private details, and anything that should be verified in the original source.
 ```
@@ -120,13 +126,20 @@ Return a concise Markdown artifact. Remove prompt chatter, unsupported claims, p
 Critique this robotics experiment plan for research value.
 
 Hypothesis:
-[hypothesis]
+Contact-stability diagnostics will reveal manipulation failures that binary task success hides.
 
 Experiment plan:
-[plan]
+- Task: simulated tabletop pushing with low-contact and contact-rich variants
+- Baseline: vision-only imitation policy
+- Metrics: task success, contact stability, slip events, recovery time
+- Ablation: remove pose perturbations and compare diagnostic value
+- Scope: 4 weeks
 
 Available setup:
-[robot or simulator, data, time, compute]
+- Generic tabletop simulator
+- Small synthetic demonstration set
+- Limited compute
+- No real-robot access this month
 
 Return:
 - what decision the experiment can support
@@ -142,13 +155,21 @@ Return:
 Review my AI use for this week of robotics research.
 
 AI-assisted tasks:
-[sanitized list]
+- Extracted assumptions from two paper cards on simulated manipulation.
+- Asked for possible gaps around contact-rich evaluation.
+- Asked for a fault tree after a simulated policy failed under pose perturbations.
+- Asked for stronger wording for a draft claim.
 
 Artifacts produced:
-[paper cards, tables, plans, fault trees, claim-evidence checks]
+- 2 paper cards
+- 1 research gap table
+- 1 fault tree
+- 1 claim-evidence table
 
 Decisions made:
-[decisions]
+- Keep the contact-stability diagnostic idea for one more week.
+- Drop a broad "general manipulation robustness" claim.
+- Run one ablation before writing the result summary.
 
 Return:
 - highest-value AI use

@@ -52,6 +52,7 @@ This repository is a working playbook. Use it to structure private research work
 4. Use [docs/06-grad-student-playbook.md](docs/06-grad-student-playbook.md) as an early-stage researcher training path.
 5. Use [docs/07-research-taste.md](docs/07-research-taste.md) to train research judgment: problem choice, gap quality, testability, and evidence discipline.
 6. Use [docs/08-ai-value-playbook.md](docs/08-ai-value-playbook.md) to turn advanced AI sessions into reusable research assets.
+7. Use [docs/09-active-workflows.md](docs/09-active-workflows.md) to design reminders, recurring reviews, and safety checks.
 
 ## First 60 Minutes
 
@@ -81,7 +82,8 @@ Use one paper and one small worksheet. Keep any real notes, paths, results, and 
 |   |-- 05-sanitization.md
 |   |-- 06-grad-student-playbook.md
 |   |-- 07-research-taste.md
-|   `-- 08-ai-value-playbook.md
+|   |-- 08-ai-value-playbook.md
+|   `-- 09-active-workflows.md
 `-- examples/
     `-- sanitized-examples.md
 ```

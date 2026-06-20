@@ -50,6 +50,11 @@ Weak substitutes for research taste:
 
 The Heilmeier Catechism is useful here because it asks for objectives, current practice, novelty, impact, risk, cost, time, and success checks. For early-stage robotics projects, use the spirit of those questions at a smaller scale.
 
+Mini examples:
+
+- Weak gap: "Use a larger model for the same simulated pick-and-place benchmark." Stronger gap: "The benchmark reports success rate, but does not separate contact failures from visual recognition failures."
+- Overclaim: "The policy generalizes to unseen objects." Safer claim: "In simulation, the policy improves success on three held-out synthetic object shapes under the tested reset distribution."
+
 ## 4. Research Taste in Robotics / 机器人科研中的科研品味
 
 Robotics research taste combines algorithmic judgment with system and experimental judgment.

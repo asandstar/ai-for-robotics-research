@@ -680,3 +680,23 @@ Return:
 - decision the artifact should support
 - private details to keep out
 ```
+
+## Active Workflow Prompts
+
+Use these for reminders and recurring reviews. See [docs/09-active-workflows.md](09-active-workflows.md) for the design.
+
+```text
+Create the next active workflow step for this robotics research project.
+
+Current state:
+[paper card, experiment ledger, failure note, or weekly review]
+
+Loop:
+[Monday planning / Friday review / paper reading / experiment failure / AI value review]
+
+Return:
+- next action
+- artifact to update
+- safety check
+- decision that still needs human review
+```
