@@ -1,6 +1,6 @@
 # Robotics Frontiers
 
-This is an evergreen conceptual overview, not a latest-paper survey. Use it to orient research questions, then verify current details with primary sources.
+This overview is conceptual and evergreen. Use it to orient research questions, then verify current details with primary sources.
 
 ## Vision-Language-Action Models
 
@@ -18,7 +18,7 @@ This is an evergreen conceptual overview, not a latest-paper survey. Use it to o
 
 **Risks and limitations:** Data quality, embodiment mismatch, brittle instruction following, hard-to-debug failures, unclear generalization.
 
-**What not to claim without evidence:** General robot intelligence, broad out-of-distribution robustness, or safe deployment from language conditioning alone.
+**Evidence boundary:** Do not claim general robot intelligence, broad out-of-distribution robustness, or safe deployment from language conditioning alone.
 
 ## Diffusion Policy
 
@@ -36,7 +36,7 @@ This is an evergreen conceptual overview, not a latest-paper survey. Use it to o
 
 **Risks and limitations:** Inference latency, compounding errors, sensitivity to data coverage, limited guarantees under contact-rich dynamics.
 
-**What not to claim without evidence:** That diffusion is inherently better for all robot policies or that smooth generated actions imply task robustness.
+**Evidence boundary:** Do not claim that diffusion is inherently better for all robot policies or that smooth generated actions imply task robustness.
 
 ## Tactile and Force-Aware Manipulation
 
@@ -54,7 +54,7 @@ This is an evergreen conceptual overview, not a latest-paper survey. Use it to o
 
 **Risks and limitations:** Sensor fragility, calibration drift, limited datasets, hard sim-to-real transfer for contact.
 
-**What not to claim without evidence:** That tactile input improves performance generally or that contact-rich success transfers across hardware.
+**Evidence boundary:** Do not claim that tactile input improves performance generally or that contact-rich success transfers across hardware.
 
 ## Robot World Models
 
@@ -72,7 +72,7 @@ This is an evergreen conceptual overview, not a latest-paper survey. Use it to o
 
 **Risks and limitations:** Model bias, poor long-horizon prediction, distribution shift, visually plausible but physically wrong futures.
 
-**What not to claim without evidence:** That realistic prediction equals useful control or that a learned model captures physical causality.
+**Evidence boundary:** Do not claim that realistic prediction equals useful control or that a learned model captures physical causality.
 
 ## Learning From Human Videos
 
@@ -90,7 +90,7 @@ This is an evergreen conceptual overview, not a latest-paper survey. Use it to o
 
 **Risks and limitations:** Embodiment mismatch, missing force information, camera bias, ambiguous intent, unsafe copied behavior.
 
-**What not to claim without evidence:** Direct transfer from internet videos to robot execution or human-level task understanding.
+**Evidence boundary:** Do not claim direct transfer from internet videos to robot execution or human-level task understanding.
 
 ## Humanoid and Whole-Body Control
 
@@ -108,7 +108,7 @@ This is an evergreen conceptual overview, not a latest-paper survey. Use it to o
 
 **Risks and limitations:** Hardware wear, safety risk, sim-to-real gaps, expensive data collection, brittle recovery.
 
-**What not to claim without evidence:** Human-like generality, robust household deployment, or safety under untested contacts.
+**Evidence boundary:** Do not claim human-like generality, robust household deployment, or safety under untested contacts.
 
 ## Sim-to-Real
 
@@ -126,4 +126,4 @@ This is an evergreen conceptual overview, not a latest-paper survey. Use it to o
 
 **Risks and limitations:** Hidden simulator artifacts, overfitting to synthetic variation, missing contact or sensor effects, incomplete real validation.
 
-**What not to claim without evidence:** Real-world robustness from simulation metrics alone or transfer across hardware without testing.
+**Evidence boundary:** Do not claim real-world robustness from simulation metrics alone or transfer across hardware without testing.

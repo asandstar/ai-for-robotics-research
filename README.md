@@ -2,6 +2,8 @@
 
 From papers to experiments, from ideas to evidence.
 
+Languages: English | [简体中文](README.zh-CN.md)
+
 ## What This Repo Is
 
 This repository is a sanitized, documentation-first playbook for using AI tools to support robotics research. It collects compact workflows, prompt templates, reusable Markdown structures, and release-safety checklists for researchers who want AI assistance without exposing private work.
@@ -40,14 +42,15 @@ It is especially useful for people working across robotics learning, manipulatio
 9. Connect results to claims with explicit evidence.
 10. Write, revise, and prepare rebuttals using traceable support.
 
-## Recommended Path for Early-Stage Researchers
+## How to Use This Repository
 
-If you are early in graduate research, start with a small evidence-building loop:
+This repository is a working playbook. Use it to structure private research work, then keep the private work outside this public repo.
 
-1. Read [docs/01-research-workflow.md](docs/01-research-workflow.md) to understand the full research cycle.
-2. Use [docs/04-templates.md](docs/04-templates.md) to create paper cards, a literature matrix, an idea bank, and an experiment ledger.
-3. Use [docs/03-prompt-library.md](docs/03-prompt-library.md) to ask AI tools for critique, failure analysis, and idea-to-experiment conversion.
-4. Follow [docs/06-grad-student-playbook.md](docs/06-grad-student-playbook.md) as a 12-week practical training path.
+1. Start with [docs/01-research-workflow.md](docs/01-research-workflow.md) to understand the full research cycle.
+2. Use [docs/04-templates.md](docs/04-templates.md) as private research notebook structures for paper cards, literature matrices, idea banks, and experiment ledgers.
+3. Use [docs/03-prompt-library.md](docs/03-prompt-library.md) for critique, idea evaluation, experiment design, debugging, result analysis, and writing.
+4. Use [docs/06-grad-student-playbook.md](docs/06-grad-student-playbook.md) as an early-stage researcher training path.
+5. Use [docs/07-research-taste.md](docs/07-research-taste.md) to train research judgment: problem choice, gap quality, testability, and evidence discipline.
 
 ## Repository Structure
 
@@ -55,6 +58,7 @@ If you are early in graduate research, start with a small evidence-building loop
 .
 |-- .gitignore
 |-- README.md
+|-- README.zh-CN.md
 |-- LICENSE
 |-- AGENTS.md
 |-- docs/
@@ -63,7 +67,8 @@ If you are early in graduate research, start with a small evidence-building loop
 |   |-- 03-prompt-library.md
 |   |-- 04-templates.md
 |   |-- 05-sanitization.md
-|   `-- 06-grad-student-playbook.md
+|   |-- 06-grad-student-playbook.md
+|   `-- 07-research-taste.md
 `-- examples/
     `-- sanitized-examples.md
 ```

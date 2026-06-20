@@ -118,13 +118,24 @@ Copy these Markdown templates into your private notes or sanitized public docume
 | Criterion | Score 1-5 | Notes |
 |---|---:|---|
 | Importance |  |  |
+| Novelty |  |  |
+| Clarity |  |  |
+| Testability |  |  |
+| Feasibility |  |  |
+| Evidence quality |  |  |
 | Grounding |  |  |
 | Gap quality |  |  |
 | Hypothesis clarity |  |  |
 | Baseline clarity |  |  |
-| 4-week feasibility |  |  |
 | Risk awareness |  |  |
+| Long-term value |  |  |
 | Evidence path |  |  |
+
+## Smallest Test
+- Minimal experiment:
+- Primary metric:
+- Diagnostic metric:
+- Drop or revise if:
 
 ## Decision
 - Proceed / Revise / Reject:
@@ -205,9 +216,42 @@ Copy these Markdown templates into your private notes or sanitized public docume
 ## Claim-Evidence Table
 
 ```markdown
-| Claim | Evidence | Source | Strength | Caveat | Next Evidence Needed |
-|---|---|---|---|---|---|
-|  |  |  | Strong / Moderate / Weak |  |  |
+| Claim | Supporting Evidence | Missing Evidence | Alternative Explanation | Strength | Safer Wording | Next Evidence Needed |
+|---|---|---|---|---|---|---|
+|  |  |  |  | Strong / Moderate / Weak |  |  |
+```
+
+## Weekly Research Taste Review
+
+```markdown
+# Weekly Research Taste Review
+
+## Week
+
+## Papers Read
+- 
+
+## Ideas Considered
+- 
+
+## Experiments or Diagnostics Run
+- 
+
+## Judgment Update
+- What I understand better:
+- Assumption I was wrong about:
+- Weakest current claim:
+
+## Evidence Review
+| Claim | Evidence | Missing Evidence | Decision |
+|---|---|---|---|
+|  |  |  | Keep / revise / drop |
+
+## Research Taste Notes
+- Real gap or small tweak:
+- Scope too large:
+- Failure mode I should not ignore:
+- Next evidence target:
 ```
 
 ## Weekly Research Review
@@ -242,7 +286,7 @@ Copy these Markdown templates into your private notes or sanitized public docume
 ## Claims I Can Support
 - 
 
-## Claims I Cannot Support Yet
+## Unsupported Claims
 - 
 
 ## Decisions Made
@@ -253,7 +297,7 @@ Copy these Markdown templates into your private notes or sanitized public docume
 - Priority 2:
 - Priority 3:
 
-## What Not to Work On
+## Out of Scope
 - 
 
 ## Sanitization Notes

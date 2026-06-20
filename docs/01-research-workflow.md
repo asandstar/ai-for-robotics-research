@@ -1,10 +1,10 @@
 # Research Workflow
 
-This page describes a complete robotics research loop and how AI tools can support each stage. Treat AI output as draft assistance, not as evidence.
+This page follows a full robotics research loop and shows where AI tools can help. AI output belongs in drafts, checklists, and critiques; evidence still comes from papers, experiments, and reviewed artifacts.
 
 ## Beginner Researcher Mode
 
-Early-stage researchers should use this workflow as a small evidence-building loop, not as a full paper factory. The goal is to train judgment while creating research artifacts that can be reviewed.
+Early-stage researchers should use this workflow as a small evidence-building loop. The useful artifacts are paper cards, matrices, hypotheses, experiment ledgers, and claim-evidence tables that another researcher can inspect.
 
 1. Start with paper cards for 5 to 10 papers. For each paper, record the problem, method, evidence, assumptions, and limitations.
 2. Build a small literature matrix. Compare papers by task, method family, evaluation, baselines, and limitations.
@@ -14,7 +14,7 @@ Early-stage researchers should use this workflow as a small evidence-building lo
 6. Keep an experiment ledger. Record setup, variables, runs, failures, and decisions before writing any narrative.
 7. Review claims against evidence. Every claim should point to a paper, experiment, ablation, failure analysis, or explicit limitation.
 
-Advanced reasoning models are useful in this mode when they critique weak assumptions, generate alternative explanations, and convert vague ideas into testable experiments. They are not a substitute for reading the paper, running the experiment, or deciding what evidence is sufficient.
+Advanced reasoning models are useful here when they critique weak assumptions, generate alternative explanations, and convert vague ideas into testable experiments. The paper still has to be read, the experiment still has to run, and the evidence threshold still has to be set by the researcher.
 
 ## 1. Finding a Research Direction
 
@@ -35,7 +35,7 @@ Advanced reasoning models are useful in this mode when they critique weak assump
 
 - Direction is specific enough to search and test.
 - Required robot platform, data, and compute are plausible.
-- The idea is not just "combine method A with robot task B."
+- The idea has more substance than "combine method A with robot task B."
 - Evaluation can distinguish success from noise.
 
 ## 2. Scanning Frontiers
@@ -100,14 +100,14 @@ Advanced reasoning models are useful in this mode when they critique weak assump
 
 **Quality checklist:**
 
-- Papers are grouped by technical substance, not just keywords.
+- Papers are grouped by technical substance; keyword overlap is treated as weak evidence.
 - Matrix columns support comparison.
 - Missing evidence is marked as unknown, not guessed.
 - Sources remain traceable.
 
 ## 5. Identifying Research Gaps
 
-**Purpose:** Find a gap that is meaningful, testable, and not merely an untried combination.
+**Purpose:** Find a gap that is meaningful, testable, and stronger than an untried combination.
 
 **Inputs:** Literature matrix, limitations from paper cards, failed reproduction notes, benchmark weaknesses, practical deployment constraints.
 
@@ -122,7 +122,7 @@ Advanced reasoning models are useful in this mode when they critique weak assump
 
 **Quality checklist:**
 
-- Gap is grounded in literature, not preference.
+- Gap is grounded in literature, assumptions, failures, or missing evidence.
 - Gap matters for robotics behavior or understanding.
 - A negative result would still teach something.
 - Evaluation avoids hidden leakage or unfair baselines.

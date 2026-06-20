@@ -1,10 +1,10 @@
 # Graduate Student Playbook
 
-This playbook is for early-stage graduate students using AI tools, especially advanced reasoning models, to build a real robotics research pipeline. The aim is better judgment and better evidence, not faster production of unsupported narratives.
+This playbook is for early-stage graduate students using AI tools, especially advanced reasoning models, to build a real robotics research pipeline. Use it to improve judgment, evidence quality, and weekly research artifacts.
 
 ## Purpose
 
-Use AI tools to make research work more explicit:
+Use AI tools to make research work visible enough to inspect:
 
 - Turn papers into structured notes.
 - Turn observations into testable hypotheses.
@@ -12,7 +12,7 @@ Use AI tools to make research work more explicit:
 - Turn failures into diagnostics.
 - Turn results into claims with evidence boundaries.
 
-The useful output is not a polished paragraph. It is a clearer decision about what to read, test, reject, or explain.
+The useful output is a clearer decision about what to read, test, reject, or explain. Polished prose comes later.
 
 ## What AI Tools Are Useful For
 
@@ -24,7 +24,7 @@ The useful output is not a polished paragraph. It is a clearer decision about wh
 - Drafting claim-evidence tables before writing.
 - Rewriting for clarity after the scientific content is correct.
 
-## What AI Tools Cannot Replace
+## Work AI Tools Still Leave to You
 
 - Reading primary sources.
 - Understanding robot hardware, simulators, and task constraints.
@@ -34,11 +34,11 @@ The useful output is not a polished paragraph. It is a clearer decision about wh
 - Interpreting failure cases from videos, logs, and system behavior.
 - Owning the final scientific claim.
 
-If an AI-generated idea cannot be linked to literature, a mechanism, and a feasible experiment, it is not yet a research idea.
+An AI-generated idea needs three anchors before implementation: literature, a plausible mechanism, and a feasible experiment.
 
 ## How to Use Advanced Reasoning Models Effectively
 
-Use advanced reasoning models for slow critique, not only fast generation.
+Use advanced reasoning models for slow critique after the first round of generation.
 
 Good requests:
 
@@ -66,13 +66,15 @@ Practical rules:
 
 ## Core Skills to Train
 
+Research taste is one of the skills early-stage researchers should train deliberately. In this repo, research taste means practical judgment about problem importance, real gaps, testable ideas, experiment quality, and evidence boundaries. Use [docs/07-research-taste.md](07-research-taste.md) as the companion guide; this playbook focuses on weekly execution and training routines.
+
 ### Research Judgment
 
 Practice deciding whether an idea is important, feasible, and testable. Ask AI to score ideas with a rubric, then disagree with the score and explain why.
 
 ### Literature Reading
 
-Read papers into paper cards. Ask AI to extract claims and assumptions, but verify details in the paper. A useful paper note should help you compare, not just remember.
+Read papers into paper cards. Ask AI to extract claims and assumptions, then verify details in the paper. A useful paper note supports comparison across papers.
 
 ### Idea Generation
 
@@ -128,14 +130,14 @@ Score each item from 1 to 5.
 |---|---|
 | Importance | Would the answer matter for robot behavior, evaluation, or understanding? |
 | Grounding | Is the idea connected to specific papers or observed failures? |
-| Gap quality | Is this a real research gap rather than a small engineering tweak? |
+| Gap quality | Does the gap change the research question, or only add a small engineering tweak? |
 | Hypothesis clarity | Can the idea be stated as a falsifiable hypothesis? |
 | Baseline clarity | Is there a fair comparison method? |
 | Experiment feasibility | Can a 4-week MVP produce useful evidence? |
 | Risk awareness | Are likely confounders and failure modes named? |
 | Evidence path | Is it clear what evidence would support or weaken the claim? |
 
-Use the score to guide discussion, not to automate decisions.
+Use the score to guide discussion. The decision still needs literature context and experimental constraints.
 
 ## Experiment Skill Ladder
 
@@ -148,7 +150,7 @@ Use the score to guide discussion, not to automate decisions.
 7. Analyze failures by category.
 8. Write a claim-evidence table.
 9. Design a new minimal experiment from a hypothesis.
-10. Decide what not to claim.
+10. Decide the claim boundaries.
 
 ## Weekly Research Routine
 

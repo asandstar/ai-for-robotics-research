@@ -292,7 +292,7 @@ For each comment, provide:
 
 ## Research Judgment Training
 
-**Use case:** Train yourself to evaluate robotics ideas instead of only generating them.
+**Use case:** Train yourself to evaluate robotics ideas after generating them.
 
 **Input required:** Sanitized idea, related paper observations, constraints, possible baseline.
 
@@ -312,7 +312,7 @@ Evaluate the idea using:
 3. Feasibility
 4. Baseline clarity
 5. Experiment path
-6. Main reasons this may not be a real research contribution
+6. Main reasons the contribution may be weak
 
 Return a score table, the strongest critique, and a revised testable version.
 ```
@@ -352,7 +352,7 @@ Return a decision: proceed, revise, or reject, with reasons.
 
 **Expected output:** Proceed/revise/reject decision and concrete revisions.
 
-**Common mistakes:** Using this after implementation instead of before; omitting baseline details; treating critique as final authority.
+**Common mistakes:** Waiting until after implementation; omitting baseline details; treating critique as final authority.
 
 ## Skeptical Reviewer Critique
 
@@ -499,9 +499,66 @@ Return:
 - Expected artifact for each task
 - Risks
 - A Friday review checklist
-- What not to work on this week
+- Out-of-scope work for this week
 ```
 
 **Expected output:** Focused weekly plan tied to artifacts and evidence.
 
 **Common mistakes:** Planning too many tasks; optimizing writing before evidence; failing to define a weekly deliverable.
+
+## Research Taste Prompts
+
+Use these when you want AI to pressure-test judgment after idea generation. For fuller bilingual versions, see [docs/07-research-taste.md](07-research-taste.md).
+
+### Idea Evaluation
+
+```text
+Evaluate this robotics research idea for research taste.
+
+Idea: [sanitized idea]
+Paper observations: [paper card bullets]
+Available setup: [robot or simulator, data, compute, time]
+Candidate baseline: [baseline or unknown]
+
+Score importance, novelty, clarity, testability, feasibility, evidence quality, risk awareness, and long-term value from 1 to 5. Return the strongest reason to reject the idea, the smallest testable revision, and the evidence needed before making a claim.
+```
+
+### Strict Advisor Critique
+
+```text
+Act as a strict robotics advisor. Review this hypothesis, baseline, metric, experiment plan, and constraints. Identify vague claims, missing baselines, weak metrics, confounders, scope that is too large, and the smallest experiment worth running. Return proceed, revise, or reject.
+```
+
+### Skeptical Reviewer Critique
+
+```text
+Act as a skeptical robotics reviewer. Given the claim, evidence, experiment design, and limitations, identify unsupported claims, missing controls, alternative explanations, and safer wording.
+```
+
+### Claim-Evidence Checking
+
+```text
+Check this claim-evidence alignment.
+
+Claims: [claims]
+Results: [sanitized results]
+Baselines: [baselines]
+Failures: [failure notes]
+Limitations: [known limitations]
+
+Return a table with claim, supporting evidence, missing evidence, alternative explanation, safer wording, and next experiment.
+```
+
+### Weekly Research Taste Review
+
+```text
+Review one week of robotics research for research taste.
+
+Papers read: [paper cards]
+Ideas considered: [idea bank]
+Experiments run: [ledger summary]
+Failures: [failure notes]
+Decisions made: [decisions]
+
+Return what judgment improved, the weakest assumption, supported claims, unsupported claims, one idea to drop or revise, and next week's evidence target.
+```

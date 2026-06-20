@@ -112,3 +112,34 @@ Add a contact-stability diagnostic to manipulation policy evaluation and test wh
 - If contact stability does not vary across conditions, the proposed gap may be weak or the diagnostic may be poorly chosen.
 - No claim should be made about real robot robustness without real-world validation.
 ```
+
+## Synthetic Research Taste Example
+
+This example is synthetic and public-safe. It is meant to show judgment, not results.
+
+```markdown
+## Paper Observation
+A public simulated-manipulation paper reports high task success, but the paper card notes limited analysis of failures under small object-pose perturbations.
+
+## Possible Gap
+The reported success may not distinguish robust manipulation from behavior that depends on narrow initial conditions.
+
+## Research Idea
+Evaluate whether perturbation-based diagnostics reveal brittle behavior that task success alone hides.
+
+## Minimal Experiment
+- Task: Synthetic tabletop object relocation in a generic simulator.
+- Baseline: Vision-only imitation policy.
+- Perturbation: Small randomized changes in initial object pose.
+- Primary metric: Task success.
+- Diagnostic metric: Recovery time and failure category.
+- Ablation: No perturbation versus controlled perturbation.
+
+## Evidence Needed
+- Success and diagnostic metrics across both conditions.
+- Failure categories showing whether perturbations expose a distinct weakness.
+- Claim-evidence table separating simulator-only evidence from any real-robot claim.
+
+## Possible Reason to Drop or Revise
+If failures are random, metrics are unstable, or the diagnostic does not reveal information beyond task success, revise the idea or drop it.
+```
