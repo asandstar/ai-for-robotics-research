@@ -2,6 +2,8 @@
 
 From papers to experiments, from ideas to evidence.
 
+Current version: v0.5
+
 Languages: English | [简体中文](README.zh-CN.md)
 
 ## What This Repo Is

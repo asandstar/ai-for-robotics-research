@@ -2,6 +2,8 @@
 
 From papers to experiments, from ideas to evidence.
 
+当前版本：v0.5
+
 Languages: [English](README.md) | 简体中文
 
 ## 这个仓库是什么
