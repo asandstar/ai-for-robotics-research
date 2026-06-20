@@ -1,0 +1,11 @@
+.env
+*.log
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+local-notes/
+private-notes/
+outputs/
+tmp/
+drafts/private/
+data/private/

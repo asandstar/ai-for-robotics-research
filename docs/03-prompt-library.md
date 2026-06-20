@@ -289,3 +289,219 @@ For each comment, provide:
 **Expected output:** Response plan with evidence references and edit commitments.
 
 **Common mistakes:** Being defensive; promising experiments that cannot be run; adding unsupported claims.
+
+## Research Judgment Training
+
+**Use case:** Train yourself to evaluate robotics ideas instead of only generating them.
+
+**Input required:** Sanitized idea, related paper observations, constraints, possible baseline.
+
+**Prompt template:**
+
+```text
+Help train my research judgment for this robotics idea.
+
+Idea: [sanitized idea]
+Related observations from papers: [bullets]
+Available setup: [robot or simulator, data, compute, time]
+Possible baseline: [baseline or unknown]
+
+Evaluate the idea using:
+1. Importance
+2. Gap quality
+3. Feasibility
+4. Baseline clarity
+5. Experiment path
+6. Main reasons this may not be a real research contribution
+
+Return a score table, the strongest critique, and a revised testable version.
+```
+
+**Expected output:** Score table, critique, and revised hypothesis.
+
+**Common mistakes:** Asking for encouragement; hiding constraints; accepting a high score without checking the literature.
+
+## Strict Advisor Critique
+
+**Use case:** Stress-test a plan before spending weeks implementing it.
+
+**Input required:** Idea, hypothesis, literature support, baseline, metric, 4-week plan.
+
+**Prompt template:**
+
+```text
+Act as a strict robotics advisor reviewing an early-stage research plan.
+
+Idea: [idea]
+Hypothesis: [hypothesis]
+Literature support: [paper card bullets]
+Baseline: [baseline]
+Metrics: [metrics]
+4-week plan: [plan]
+
+Be direct. Identify:
+- Vague claims
+- Missing evidence
+- Weak baselines
+- Overly large scope
+- Engineering tweaks that are not research gaps
+- The smallest version worth testing
+
+Return a decision: proceed, revise, or reject, with reasons.
+```
+
+**Expected output:** Proceed/revise/reject decision and concrete revisions.
+
+**Common mistakes:** Using this after implementation instead of before; omitting baseline details; treating critique as final authority.
+
+## Skeptical Reviewer Critique
+
+**Use case:** Check whether current claims would survive peer review.
+
+**Input required:** Claim, evidence, experiment design, limitations.
+
+**Prompt template:**
+
+```text
+Act as a skeptical robotics reviewer.
+
+Claim: [claim]
+Evidence: [results or planned evidence]
+Experiment design: [summary]
+Limitations: [known limitations]
+
+Identify:
+1. Unsupported claims
+2. Missing baselines or ablations
+3. Confounders
+4. Weak metrics
+5. Overgeneralization
+6. Smallest evidence that would make the claim more credible
+
+Use factual language and do not invent missing results.
+```
+
+**Expected output:** Reviewer-style critique and evidence checklist.
+
+**Common mistakes:** Asking for a rebuttal before fixing the claim; ignoring negative evidence; using confident wording to cover weak support.
+
+## Paper-to-Idea Extraction
+
+**Use case:** Turn paper observations into possible hypotheses.
+
+**Input required:** Sanitized paper card and a small set of related papers or constraints.
+
+**Prompt template:**
+
+```text
+Extract research ideas from this paper card, but be skeptical.
+
+Paper card: [sanitized paper card]
+Related context: [optional related paper bullets]
+My constraints: [robot or simulator, data, compute, time]
+
+Return a table:
+- Paper observation
+- Possible gap
+- Why it may matter
+- Falsifiable hypothesis
+- Minimal experiment
+- Why the idea may be weak
+
+Only use the provided context. Mark unknowns explicitly.
+```
+
+**Expected output:** Candidate idea table with weak points.
+
+**Common mistakes:** Treating every limitation as a gap; generating ideas unrelated to the paper evidence; skipping feasibility.
+
+## Idea-to-Experiment Conversion
+
+**Use case:** Convert a vague idea into a minimal robotics experiment.
+
+**Input required:** Idea, target task, available setup, baseline, metric constraints.
+
+**Prompt template:**
+
+```text
+Convert this robotics idea into a minimal experiment.
+
+Idea: [idea]
+Target task: [task]
+Available setup: [setup]
+Candidate baseline: [baseline]
+Time budget: [duration]
+
+Return:
+1. Testable hypothesis
+2. Minimal task
+3. Baseline
+4. Primary metric
+5. Diagnostic metric
+6. Ablation
+7. Failure modes to log
+8. Result that would make me reject or revise the idea
+```
+
+**Expected output:** MVP experiment plan with rejection criteria.
+
+**Common mistakes:** Designing a full system first; using only success rate; failing to define what would disprove the idea.
+
+## Experiment Failure Diagnosis
+
+**Use case:** Analyze a failed run without overreacting or changing too many variables.
+
+**Input required:** Sanitized symptoms, expected behavior, setup, recent changes, available metrics.
+
+**Prompt template:**
+
+```text
+Diagnose this failed robotics experiment.
+
+Hypothesis: [hypothesis]
+Expected behavior: [expected]
+Observed behavior: [observed]
+Setup summary: [sanitized setup]
+Recent changes: [changes]
+Available evidence: [metrics, summarized logs, video observations]
+
+Build a fault tree across perception, policy, control, data, simulation, evaluation, and hardware. For each likely cause, list:
+- Evidence for
+- Evidence against
+- One diagnostic check
+- One change to avoid until checked
+```
+
+**Expected output:** Prioritized failure analysis and diagnostic plan.
+
+**Common mistakes:** Pasting raw logs; blaming the model first; changing code, data, and metrics in the same iteration.
+
+## Weekly Research Planning
+
+**Use case:** Keep graduate research moving through small evidence-producing loops.
+
+**Input required:** Current goal, last week's evidence, blockers, available time, next milestone.
+
+**Prompt template:**
+
+```text
+Help plan one week of robotics research.
+
+Current goal: [goal]
+Last week's evidence: [evidence]
+Open blockers: [blockers]
+Available time: [hours]
+Next milestone: [milestone]
+
+Return:
+- One main question for the week
+- 3 concrete tasks
+- Expected artifact for each task
+- Risks
+- A Friday review checklist
+- What not to work on this week
+```
+
+**Expected output:** Focused weekly plan tied to artifacts and evidence.
+
+**Common mistakes:** Planning too many tasks; optimizing writing before evidence; failing to define a weekly deliverable.

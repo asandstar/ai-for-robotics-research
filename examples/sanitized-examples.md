@@ -83,3 +83,32 @@ A contact-aware diagnostic metric will identify manipulation failures that are n
 - Do not include private dataset paths.
 - Do not claim real robot performance unless validated and cleared for release.
 ```
+
+## Synthetic Paper-to-Experiment Pipeline
+
+This example is synthetic and public-safe. It does not describe a real unpublished project.
+
+```markdown
+## Paper Observation
+A public paper reports strong success on a simulated tabletop manipulation task, but the evaluation mainly uses binary task success.
+
+## Possible Gap
+The evaluation may not reveal whether policies succeed through stable contact behavior or through fragile trajectories that work only under narrow object poses.
+
+## Research Idea
+Add a contact-stability diagnostic to manipulation policy evaluation and test whether it reveals failure modes hidden by binary success.
+
+## Minimal Experiment
+- Setup: Generic tabletop simulator with synthetic objects.
+- Task: Move an object to a target region under small pose perturbations.
+- Baseline: Vision-only behavior cloning policy.
+- Variant: Same policy evaluated with contact-stability diagnostics.
+- Primary metric: Task success.
+- Diagnostic metric: Contact stability and recovery time after perturbation.
+- Ablation: Remove perturbations and compare whether the diagnostic still adds information.
+
+## Expected Evidence
+- If task success is similar but contact stability differs, the diagnostic may reveal a meaningful failure mode.
+- If contact stability does not vary across conditions, the proposed gap may be weak or the diagnostic may be poorly chosen.
+- No claim should be made about real robot robustness without real-world validation.
+```

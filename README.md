@@ -40,10 +40,20 @@ It is especially useful for people working across robotics learning, manipulatio
 9. Connect results to claims with explicit evidence.
 10. Write, revise, and prepare rebuttals using traceable support.
 
+## Recommended Path for Early-Stage Researchers
+
+If you are early in graduate research, start with a small evidence-building loop:
+
+1. Read [docs/01-research-workflow.md](docs/01-research-workflow.md) to understand the full research cycle.
+2. Use [docs/04-templates.md](docs/04-templates.md) to create paper cards, a literature matrix, an idea bank, and an experiment ledger.
+3. Use [docs/03-prompt-library.md](docs/03-prompt-library.md) to ask AI tools for critique, failure analysis, and idea-to-experiment conversion.
+4. Follow [docs/06-grad-student-playbook.md](docs/06-grad-student-playbook.md) as a 12-week practical training path.
+
 ## Repository Structure
 
 ```text
 .
+|-- .gitignore
 |-- README.md
 |-- LICENSE
 |-- AGENTS.md
@@ -52,7 +62,8 @@ It is especially useful for people working across robotics learning, manipulatio
 |   |-- 02-robotics-frontiers.md
 |   |-- 03-prompt-library.md
 |   |-- 04-templates.md
-|   `-- 05-sanitization.md
+|   |-- 05-sanitization.md
+|   `-- 06-grad-student-playbook.md
 `-- examples/
     `-- sanitized-examples.md
 ```

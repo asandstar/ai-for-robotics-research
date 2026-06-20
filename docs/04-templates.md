@@ -84,6 +84,54 @@ Copy these Markdown templates into your private notes or sanitized public docume
 |  |  |  |  |  |  |  |
 ```
 
+## Idea Bank
+
+```markdown
+# Idea Bank
+
+| Idea | Source | Paper Observation or Failure | Possible Gap | Hypothesis | Status | Next Check |
+|---|---|---|---|---|---|---|
+|  | Paper / experiment / discussion |  |  |  | New / Review / Reject / Test |  |
+
+## Rejected Ideas
+
+| Idea | Rejection Reason | Evidence or Missing Condition |
+|---|---|---|
+|  |  |  |
+```
+
+## Research Idea Evaluation
+
+```markdown
+# Research Idea Evaluation
+
+## Idea
+
+## One-Sentence Hypothesis
+
+## Literature Grounding
+- Paper cards:
+- Known limitations:
+- Related baselines:
+
+## Evaluation Rubric
+| Criterion | Score 1-5 | Notes |
+|---|---:|---|
+| Importance |  |  |
+| Grounding |  |  |
+| Gap quality |  |  |
+| Hypothesis clarity |  |  |
+| Baseline clarity |  |  |
+| 4-week feasibility |  |  |
+| Risk awareness |  |  |
+| Evidence path |  |  |
+
+## Decision
+- Proceed / Revise / Reject:
+- Why:
+- Next check:
+```
+
 ## Experiment Ledger
 
 ```markdown
@@ -122,6 +170,38 @@ Copy these Markdown templates into your private notes or sanitized public docume
 ## Next Action
 ```
 
+## Experiment Debug Log
+
+```markdown
+# Experiment Debug Log
+
+## Experiment ID
+
+## Failure Summary
+- Expected:
+- Observed:
+- First seen:
+
+## Context
+- Setup:
+- Recent changes:
+- Metrics affected:
+
+## Fault Tree
+| Category | Possible Cause | Evidence For | Evidence Against | Diagnostic Check | Status |
+|---|---|---|---|---|---|
+| Perception |  |  |  |  |  |
+| Policy |  |  |  |  |  |
+| Control |  |  |  |  |  |
+| Data |  |  |  |  |  |
+| Simulation |  |  |  |  |  |
+| Evaluation |  |  |  |  |  |
+
+## Next One-Variable Change
+
+## Changes to Avoid for Now
+```
+
 ## Claim-Evidence Table
 
 ```markdown
@@ -139,16 +219,30 @@ Copy these Markdown templates into your private notes or sanitized public docume
 
 ## Main Goal
 
+## Main Question
+
 ## Completed
 - 
 
 ## Evidence Collected
 - 
 
+## Paper Cards Added
+- 
+
+## Experiment Ledger Updates
+- 
+
 ## Open Questions
 - 
 
 ## Failures or Surprises
+- 
+
+## Claims I Can Support
+- 
+
+## Claims I Cannot Support Yet
 - 
 
 ## Decisions Made
@@ -159,7 +253,26 @@ Copy these Markdown templates into your private notes or sanitized public docume
 - Priority 2:
 - Priority 3:
 
+## What Not to Work On
+- 
+
 ## Sanitization Notes
 - Anything unsafe for public release:
 - Items that need anonymization:
+```
+
+## Skill Growth Log
+
+```markdown
+# Skill Growth Log
+
+| Week | Skill | Practice Artifact | Feedback Source | What Improved | Next Practice |
+|---|---|---|---|---|---|
+|  | Literature reading / experiment design / debugging / writing |  | Self / advisor / peer / reviewer |  |  |
+
+## Current Weak Spots
+- 
+
+## Next Deliberate Practice Task
+- 
 ```

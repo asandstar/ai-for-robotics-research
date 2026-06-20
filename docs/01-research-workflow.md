@@ -2,6 +2,20 @@
 
 This page describes a complete robotics research loop and how AI tools can support each stage. Treat AI output as draft assistance, not as evidence.
 
+## Beginner Researcher Mode
+
+Early-stage researchers should use this workflow as a small evidence-building loop, not as a full paper factory. The goal is to train judgment while creating research artifacts that can be reviewed.
+
+1. Start with paper cards for 5 to 10 papers. For each paper, record the problem, method, evidence, assumptions, and limitations.
+2. Build a small literature matrix. Compare papers by task, method family, evaluation, baselines, and limitations.
+3. Generate a research gap table. Ask AI to propose gaps, then reject gaps that are only small engineering tweaks or unsupported by the matrix.
+4. Evaluate ideas with a rubric. Score each idea for importance, novelty, feasibility, evidence path, baseline clarity, and risk.
+5. Design a 4-week MVP experiment. Prefer the smallest experiment that can test one hypothesis or kill a weak idea.
+6. Keep an experiment ledger. Record setup, variables, runs, failures, and decisions before writing any narrative.
+7. Review claims against evidence. Every claim should point to a paper, experiment, ablation, failure analysis, or explicit limitation.
+
+Advanced reasoning models are useful in this mode when they critique weak assumptions, generate alternative explanations, and convert vague ideas into testable experiments. They are not a substitute for reading the paper, running the experiment, or deciding what evidence is sufficient.
+
 ## 1. Finding a Research Direction
 
 **Purpose:** Choose a tractable area where the lab's skills, equipment, and research taste can produce evidence.
