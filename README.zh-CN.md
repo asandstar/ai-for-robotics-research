@@ -2,7 +2,7 @@
 
 From papers to experiments, from ideas to evidence.
 
-当前版本：v0.5
+当前版本：v0.6
 
 Languages: [English](README.md) | 简体中文
 
@@ -38,6 +38,7 @@ Languages: [English](README.md) | 简体中文
 5. 读 [docs/07-research-taste.md](docs/07-research-taste.md)，把科研品味当作可以训练的判断力。
 6. 用 [docs/08-ai-value-playbook.md](docs/08-ai-value-playbook.md) 把高级 AI 会话整理成可复用的科研资产。
 7. 用 [docs/09-active-workflows.md](docs/09-active-workflows.md) 设计提醒、周期性复盘和公开安全检查。
+8. 用 [docs/10-research-drills.md](docs/10-research-drills.md) 做科研训练题，反复练习读论文、判断 gap、设计实验、分析失败和检查 claim-evidence。
 
 ## 第一次使用：60 分钟小循环
 
@@ -82,7 +83,8 @@ Languages: [English](README.md) | 简体中文
 |   |-- 06-grad-student-playbook.md
 |   |-- 07-research-taste.md
 |   |-- 08-ai-value-playbook.md
-|   `-- 09-active-workflows.md
+|   |-- 09-active-workflows.md
+|   `-- 10-research-drills.md
 `-- examples/
     `-- sanitized-examples.md
 ```

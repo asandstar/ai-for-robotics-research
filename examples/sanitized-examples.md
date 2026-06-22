@@ -251,3 +251,26 @@ Run perception replay and reset-distribution checks before retraining the policy
 ## Artifact to Save
 Experiment Debug Log entry plus one claim-evidence note: current evidence supports a sim-to-real mismatch. A policy improvement claim would need additional comparison runs.
 ```
+
+## Worked Example 5: Research Drill Use
+
+Synthetic and public-safe. This example shows a drill result, not a real project note.
+
+```markdown
+## Input Observation
+A public simulated-manipulation paper reports high success on object relocation, but the paper card notes limited analysis of initial pose variation.
+
+## Drill Used
+Gap Triage Drill.
+
+## Output Artifact
+| Candidate Gap | Category | Evidence | Score 1-5 | Decision | Reason |
+|---|---|---|---:|---|---|
+| Success may hide sensitivity to object reset pose. | Real gap candidate | Paper reports success rate, but does not separate failures by pose perturbation. | 4 | Pursue | The gap is testable with a small perturbation sweep and a claim-evidence table. |
+
+## Decision Made
+Run a 4-week minimal experiment in a generic simulator with one vision-only baseline, task success as the primary metric, and recovery time as the diagnostic metric.
+
+## Public-Safety Note
+No raw logs, private paths, real lab setup, unpublished result, or private dataset name is included.
+```

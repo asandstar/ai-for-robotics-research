@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.6
+
+- Added Research Drills Pack for paper assumptions, claim-evidence checks, gap triage, idea ranking, minimal experiments, failure diagnosis, reviewer simulation, and weekly research taste review.
+- Updated README files with v0.6 and the drills path.
+- Added compact drill-related templates.
+- Added a synthetic drill-use example.
+
 ## v0.5
 
 - Added active workflow guidance for reminders, recurring reviews, safety checks, and next-step prompts.

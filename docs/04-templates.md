@@ -119,6 +119,24 @@ Copy these Markdown templates into your private notes or sanitized public docume
 |  |  |  |  |  |  |  |
 ```
 
+## Research Drill Log
+
+```markdown
+# Research Drill Log
+
+| Date | Drill | Input Artifact | Output Artifact | Decision or Next Action |
+|---|---|---|---|---|
+|  | Paper assumption / claim-evidence / gap triage / idea ranking / minimal experiment / failure diagnosis / reviewer simulation |  |  |  |
+```
+
+## Gap Triage Table
+
+```markdown
+| Candidate Gap | Category | Evidence | Score 1-5 | Decision | Reason |
+|---|---|---|---:|---|---|
+|  | Real gap / ordinary limitation / engineering cleanup / benchmark extension / too large |  |  | Pursue / revise / park / reject |  |
+```
+
 ## Idea Bank
 
 ```markdown
@@ -216,6 +234,23 @@ Copy these Markdown templates into your private notes or sanitized public docume
 ## Next Action
 ```
 
+## Minimal Experiment Plan
+
+```markdown
+# Minimal Experiment Plan
+
+- Research question:
+- Hypothesis:
+- Smallest task setup:
+- Baseline:
+- Primary metric:
+- Diagnostic metric:
+- Ablation:
+- Failure condition:
+- Decision rule:
+- 4-week scope:
+```
+
 ## Experiment Debug Log
 
 ```markdown
@@ -248,6 +283,29 @@ Copy these Markdown templates into your private notes or sanitized public docume
 ## Changes to Avoid for Now
 ```
 
+## Failure Diagnosis Log
+
+```markdown
+# Failure Diagnosis Log
+
+## Failure Summary
+- Expected:
+- Observed:
+- Context:
+
+| Category | Possible Cause | Evidence For | Evidence Against | Diagnostic Test | Next Action |
+|---|---|---|---|---|---|
+| Perception |  |  |  |  |  |
+| Data |  |  |  |  |  |
+| Model |  |  |  |  |  |
+| Action representation |  |  |  |  |  |
+| Control |  |  |  |  |  |
+| Simulation-real mismatch |  |  |  |  |  |
+| Evaluation protocol |  |  |  |  |  |
+| Hardware/system issue |  |  |  |  |  |
+| Hypothesis weakness |  |  |  |  |  |
+```
+
 ## Claim-Evidence Table
 
 ```markdown
@@ -262,6 +320,9 @@ Copy these Markdown templates into your private notes or sanitized public docume
 # Weekly Research Taste Review
 
 ## Week
+
+## Drills Completed
+-
 
 ## Papers Read
 - 

@@ -2,7 +2,7 @@
 
 From papers to experiments, from ideas to evidence.
 
-Current version: v0.5
+Current version: v0.6
 
 Languages: English | [简体中文](README.zh-CN.md)
 
@@ -55,6 +55,7 @@ This repository is a working playbook. Use it to structure private research work
 5. Use [docs/07-research-taste.md](docs/07-research-taste.md) to train research judgment: problem choice, gap quality, testability, and evidence discipline.
 6. Use [docs/08-ai-value-playbook.md](docs/08-ai-value-playbook.md) to turn advanced AI sessions into reusable research assets.
 7. Use [docs/09-active-workflows.md](docs/09-active-workflows.md) to design reminders, recurring reviews, and safety checks.
+8. Use [docs/10-research-drills.md](docs/10-research-drills.md) for repeatable drills on paper reading, gap triage, experiment design, failure diagnosis, and claim-evidence alignment.
 
 ## First 60 Minutes
 
@@ -85,7 +86,8 @@ Use one paper and one small worksheet. Keep any real notes, paths, results, and 
 |   |-- 06-grad-student-playbook.md
 |   |-- 07-research-taste.md
 |   |-- 08-ai-value-playbook.md
-|   `-- 09-active-workflows.md
+|   |-- 09-active-workflows.md
+|   `-- 10-research-drills.md
 `-- examples/
     `-- sanitized-examples.md
 ```
