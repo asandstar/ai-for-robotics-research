@@ -24,6 +24,14 @@ This is a documentation-first repository for AI-assisted robotics research. Keep
   - privacy or citation risks to review
   - suggested commit message
 
+## Research OS Rules
+
+- Never fabricate evidence, citations, experimental results, or research consensus.
+- Clearly distinguish public evidence from author interpretation and falsifiable hypotheses.
+- Do not promote a Research Thread from `Scoping` to `Active` without explicit instruction.
+- Do not publish unpublished results, detailed private protocols, internal benchmarks, private datasets, infrastructure details, or submission-sensitive novelty.
+- If a public hypothesis overlaps strongly with an unpublished submission, defer publication.
+
 ## Bilingual Documentation Policy
 
 - Keep file names in English kebab-case.

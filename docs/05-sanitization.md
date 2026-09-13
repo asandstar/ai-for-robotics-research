@@ -90,3 +90,13 @@ git grep -n "api_key\|token\|password\|secret\|PRIVATE\|TODO"
 - [ ] Claims are framed as guidance, templates, or conceptual overview unless backed by public evidence.
 - [ ] Git history has been checked for sensitive content.
 - [ ] License and attribution expectations are clear.
+
+## Research OS Publication Checklist
+
+- [ ] Every factual evidence claim points to a verified public source.
+- [ ] Sourced claims, working judgments, and falsifiable hypotheses are labeled distinctly.
+- [ ] Confidence is limited to the thread's stated scope and includes a rationale.
+- [ ] No unpublished results or precise negative findings are included.
+- [ ] No submission-sensitive novelty or hypothesis from active private work is exposed.
+- [ ] No internal experiment protocol, benchmark, dataset, hardware identifier, infrastructure detail, or private path is included.
+- [ ] Evidence or claims proposed in GitHub Discussions were verified before incorporation into the Markdown source.

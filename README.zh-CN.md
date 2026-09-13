@@ -10,7 +10,15 @@ Languages: [English](README.md) | 简体中文
 
 这是一个面向机器人科研的精简型 playbook，帮助研究者把高级 AI 工具用在高价值任务上：判断问题、设计实验、分析失败、检查证据，并沉淀可复用的科研资产。
 
-它也提供读论文、形成假设、写 prompt、做模板和公开脱敏的具体结构。
+它也提供读论文、形成假设、写 prompt、做模板和公开脱敏的具体结构。Markdown 仍然是内容源头。
+
+## 项目层次
+
+- **Handbook：** 稳定的科研方法、工作流、prompt、模板和训练方法，入口见 [handbook/index.md](handbook/index.md)。
+- **Research OS：** 持续更新的公开研究问题、证据、矛盾和限定范围内的 working judgment，入口见 [research/index.md](research/index.md)。
+- **Community / Discussions：** 对判断提出质疑、推荐公开来源和讨论论文，请使用 [GitHub Discussions](https://github.com/asandstar/ai-for-robotics-research/discussions)。经过核验的修改再回到 Markdown 中维护。
+
+Research OS 暂不建立完整中文镜像。
 
 ## 这个仓库不是什么
 
@@ -74,6 +82,14 @@ Languages: [English](README.md) | 简体中文
 |-- README.zh-CN.md
 |-- LICENSE
 |-- AGENTS.md
+|-- handbook/
+|   `-- index.md
+|-- research/
+|   |-- index.md
+|   |-- thread-template.md
+|   `-- threads/
+|       |-- vla.md
+|       `-- world-action-models.md
 |-- docs/
 |   |-- 01-research-workflow.md
 |   |-- 02-robotics-frontiers.md

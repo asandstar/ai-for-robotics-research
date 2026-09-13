@@ -10,7 +10,13 @@ Languages: English | [简体中文](README.zh-CN.md)
 
 This repository is a sanitized, documentation-first playbook for using advanced AI tools on high-value robotics research tasks: judging problems, designing experiments, analyzing failures, checking evidence, and turning messy work into reusable assets.
 
-It collects compact workflows, prompt templates, Markdown structures, synthetic examples, and release-safety checklists for researchers who want AI assistance without exposing private work.
+It combines stable research guidance with an evolving, public-safe research synthesis layer. Markdown remains the source of truth.
+
+## Project Layers
+
+- **Handbook:** Stable research methods, workflows, prompts, templates, and practice routines. Start at [handbook/index.md](handbook/index.md).
+- **Research OS:** Evolving public research questions, evidence, contradictions, and scoped working judgments. Start at [research/index.md](research/index.md).
+- **Community / Discussions:** Challenges, source suggestions, and paper discussion belong in [GitHub Discussions](https://github.com/asandstar/ai-for-robotics-research/discussions). Verified changes return to the Markdown source through review.
 
 ## What This Repo Is Not
 
@@ -77,6 +83,14 @@ Use one paper and one small worksheet. Keep any real notes, paths, results, and 
 |-- README.zh-CN.md
 |-- LICENSE
 |-- AGENTS.md
+|-- handbook/
+|   `-- index.md
+|-- research/
+|   |-- index.md
+|   |-- thread-template.md
+|   `-- threads/
+|       |-- vla.md
+|       `-- world-action-models.md
 |-- docs/
 |   |-- 01-research-workflow.md
 |   |-- 02-robotics-frontiers.md
