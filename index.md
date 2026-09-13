@@ -4,56 +4,40 @@ titleTemplate: false
 
 hero:
   name: AI for Robotics Research
-  text: From papers to experiments, from ideas to evidence.
-  tagline: A public-safe playbook for using AI to support robotics research decisions, experiments, and reusable artifacts.
+  text: Methods, evolving judgments, and public discussion.
+  tagline: A public-safe research system for moving from papers and questions to evidence-aware decisions.
   actions:
     - theme: brand
-      text: Start with the workflow
-      link: /docs/01-research-workflow
+      text: Open the Handbook
+      link: /handbook/
     - theme: alt
-      text: Browse the toolkit
-      link: /docs/03-prompt-library
+      text: Explore Research OS
+      link: /research/
+    - theme: alt
+      text: Join the discussion
+      link: https://github.com/asandstar/ai-for-robotics-research/discussions
 
 features:
-  - title: Evidence first
-    details: Connect research questions, experiments, failures, and claims through inspectable artifacts.
-  - title: Practical workflows
-    details: Use focused guides, drills, prompts, and templates throughout the robotics research cycle.
-  - title: Public-safe by design
-    details: Keep private work outside the repository and use only synthetic or clearly anonymized examples.
+  - title: Handbook
+    details: Learn stable research methods, reusable workflows, prompts, templates, and evidence habits.
+    link: /handbook/
+    linkText: Browse the Handbook
+  - title: Research OS
+    details: Follow evolving public research questions, evidence, contradictions, and working judgments.
+    link: /research/
+    linkText: Explore Research OS
+  - title: Discuss
+    details: Challenge ideas, suggest public evidence, and discuss papers through GitHub Discussions.
+    link: https://github.com/asandstar/ai-for-robotics-research/discussions
+    linkText: Open Discussions
 ---
 
-## Recommended first-use path
+## Current research threads
 
-1. Read the [Research Workflow](/docs/01-research-workflow) to understand the full research loop.
-2. Fill the First Pass Research Worksheet in [Templates](/docs/04-templates).
-3. Use the [Prompt Library](/docs/03-prompt-library) to extract assumptions and test a possible gap.
-4. Practice with the [Research Drills](/docs/10-research-drills).
-5. Check every public artifact against the [Sanitization Guide](/docs/05-sanitization).
+[Vision-Language-Action Models](/research/threads/vla) and [World Action Models](/research/threads/world-action-models) are in **Scoping**. These pages validate the Research Thread structure; they do not present scientific judgments or literature conclusions.
 
-## Research workflow
-
-```mermaid
-flowchart LR
-    A[Read] --> B[Map evidence]
-    B --> C[Form a hypothesis]
-    C --> D[Run a minimal experiment]
-    D --> E[Analyze failures]
-    E --> F[Align claims with evidence]
-```
-
-## Documentation map
-
-| Area | Use it for | Key pages |
-|---|---|---|
-| Getting Started | Learn the end-to-end process and establish a working rhythm. | [Research Workflow](/docs/01-research-workflow), [Graduate Student Playbook](/docs/06-grad-student-playbook) |
-| Research Foundations | Orient research questions and train research judgment. | [Robotics Frontiers](/docs/02-robotics-frontiers), [Research Taste](/docs/07-research-taste) |
-| Practice and Workflows | Turn recurring research work into small evidence-producing loops. | [Research Drills](/docs/10-research-drills), [AI Value Playbook](/docs/08-ai-value-playbook), [Active Workflows](/docs/09-active-workflows) |
-| Toolkit | Copy and adapt prompts, templates, and worked examples. | [Prompt Library](/docs/03-prompt-library), [Templates](/docs/04-templates), [Sanitized Examples](/examples/sanitized-examples) |
-| Responsible Research | Prepare material for safe public release. | [Sanitization Guide](/docs/05-sanitization) |
-
-::: warning Privacy boundary
-The examples in this site are synthetic or anonymized. Keep raw chat logs, private research notes, unpublished results, credentials, private datasets, proprietary code, and identifying lab details outside this repository.
+::: warning Public research boundary
+This site contains public methods and public-safe synthesis. Keep unpublished results, private datasets, internal experiment details, infrastructure information, submission-sensitive novelty, and confidential conversations outside this repository.
 :::
 
 For a concise Chinese introduction, see the [简体中文概览](https://github.com/asandstar/ai-for-robotics-research/blob/main/README.zh-CN.md).

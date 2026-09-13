@@ -2,6 +2,53 @@ import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 
 const repositoryUrl = 'https://github.com/asandstar/ai-for-robotics-research'
+const discussionsUrl = `${repositoryUrl}/discussions`
+
+const handbookSidebar = [
+  {
+    text: 'Getting Started',
+    items: [
+      { text: 'Handbook Home', link: '/handbook/' },
+      { text: 'Research Workflow', link: '/docs/01-research-workflow' },
+      {
+        text: 'Graduate Student Playbook',
+        link: '/docs/06-grad-student-playbook'
+      }
+    ]
+  },
+  {
+    text: 'Research Foundations',
+    items: [
+      { text: 'Robotics Frontiers', link: '/docs/02-robotics-frontiers' },
+      { text: 'Research Taste', link: '/docs/07-research-taste' }
+    ]
+  },
+  {
+    text: 'Practice and Workflows',
+    items: [
+      { text: 'Research Drills', link: '/docs/10-research-drills' },
+      { text: 'AI Value Playbook', link: '/docs/08-ai-value-playbook' },
+      { text: 'Active Workflows', link: '/docs/09-active-workflows' }
+    ]
+  },
+  {
+    text: 'Toolkit',
+    items: [
+      { text: 'Prompt Library', link: '/docs/03-prompt-library' },
+      { text: 'Templates', link: '/docs/04-templates' },
+      {
+        text: 'Sanitized Examples',
+        link: '/examples/sanitized-examples'
+      }
+    ]
+  },
+  {
+    text: 'Responsible Research',
+    items: [
+      { text: 'Sanitization Guide', link: '/docs/05-sanitization' }
+    ]
+  }
+]
 
 export default withMermaid(
   defineConfig({
@@ -9,7 +56,7 @@ export default withMermaid(
     title: 'AI for Robotics Research',
     titleTemplate: ':title | AI for Robotics Research',
     description:
-      'A public-safe playbook for AI-assisted robotics research, from papers and hypotheses to experiments and evidence.',
+      'A public-safe handbook, research system, and discussion space for AI-assisted robotics research.',
     base: '/ai-for-robotics-research/',
     cleanUrls: true,
     appearance: true,
@@ -30,91 +77,56 @@ export default withMermaid(
     },
     themeConfig: {
       nav: [
-        { text: 'Guide', link: '/docs/01-research-workflow' },
-        { text: 'Practice', link: '/docs/10-research-drills' },
+        { text: 'Handbook', link: '/handbook/' },
+        { text: 'Research OS', link: '/research/' },
+        { text: 'Discuss', link: discussionsUrl },
         {
-          text: 'Toolkit',
-          items: [
-            { text: 'Prompt Library', link: '/docs/03-prompt-library' },
-            { text: 'Templates', link: '/docs/04-templates' },
-            { text: 'Sanitized Examples', link: '/examples/sanitized-examples' }
-          ]
-        },
-        { text: 'Safety', link: '/docs/05-sanitization' },
-        {
-          text: '中文概览',
+          text: '中文',
           link: `${repositoryUrl}/blob/main/README.zh-CN.md`
         }
       ],
-      sidebar: [
-        {
-          text: 'Getting Started',
-          items: [
-            { text: 'Overview', link: '/' },
-            {
-              text: 'Research Workflow',
-              link: '/docs/01-research-workflow'
-            },
-            {
-              text: 'Graduate Student Playbook',
-              link: '/docs/06-grad-student-playbook'
-            }
-          ]
-        },
-        {
-          text: 'Research Foundations',
-          items: [
-            {
-              text: 'Robotics Frontiers',
-              link: '/docs/02-robotics-frontiers'
-            },
-            {
-              text: 'Research Taste',
-              link: '/docs/07-research-taste'
-            }
-          ]
-        },
-        {
-          text: 'Practice and Workflows',
-          items: [
-            {
-              text: 'Research Drills',
-              link: '/docs/10-research-drills'
-            },
-            {
-              text: 'AI Value Playbook',
-              link: '/docs/08-ai-value-playbook'
-            },
-            {
-              text: 'Active Workflows',
-              link: '/docs/09-active-workflows'
-            }
-          ]
-        },
-        {
-          text: 'Toolkit',
-          items: [
-            {
-              text: 'Prompt Library',
-              link: '/docs/03-prompt-library'
-            },
-            { text: 'Templates', link: '/docs/04-templates' },
-            {
-              text: 'Sanitized Examples',
-              link: '/examples/sanitized-examples'
-            }
-          ]
-        },
-        {
-          text: 'Responsible Research',
-          items: [
-            {
-              text: 'Sanitization Guide',
-              link: '/docs/05-sanitization'
-            }
-          ]
-        }
-      ],
+      sidebar: {
+        '/research/': [
+          {
+            text: 'Research OS',
+            items: [{ text: 'Overview', link: '/research/' }]
+          },
+          {
+            text: 'Active Threads',
+            items: [
+              {
+                text: 'Vision-Language-Action Models',
+                link: '/research/threads/vla'
+              },
+              {
+                text: 'World Action Models',
+                link: '/research/threads/world-action-models'
+              }
+            ]
+          },
+          {
+            text: 'Thread Method',
+            items: [
+              {
+                text: 'Research Thread Template',
+                link: '/research/thread-template'
+              }
+            ]
+          },
+          {
+            text: 'Public Research Boundary',
+            items: [
+              {
+                text: 'Sanitization Guide',
+                link: '/docs/05-sanitization'
+              }
+            ]
+          }
+        ],
+        '/handbook/': handbookSidebar,
+        '/docs/': handbookSidebar,
+        '/examples/': handbookSidebar
+      },
       outline: {
         level: [2, 3],
         label: 'On this page'
